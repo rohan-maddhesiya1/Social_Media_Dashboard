@@ -1,0 +1,268 @@
+:root .dark-mode{
+    --bg-main: #1E202A;
+    --bg-primary: #252A41;
+    --txt-dark: white; 
+    --nav-border: 1px solid white;
+    --txt2:#8B97C6;
+    --txt3:#00ff88;
+}
+
+:root{
+    --bg-main:#f5f5f5;
+    --bg-primary: white; 
+    --txt-light: black;
+    --nav-border: 1px solid black;
+    --txt2: black;
+    --txt3: rgb(209, 115, 0);
+}
+
+
+body{
+    /* background-color: #f5f5f5; */
+    background-color: var(--bg-main);
+}
+
+body .dark-mode{
+    background-color: var(--bg-main);
+}
+
+.navbar{
+    width: 100%;
+    margin:auto;
+    /* border:1px solid white; */
+    border-bottom:var(--nav-border);
+    border-radius: 5px;
+    /* background-color: #66FCF1; */
+}
+
+.dark-mode .navbar{
+    border-bottom:var(--nav-border);
+}
+
+.navbar ul{
+    overflow:auto;
+}
+
+.navbar li{
+    float: right;
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    color: var(--txt-light);
+    /* color: yellow; */
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+.dark-mode .navbar li a{
+    color: var(--txt-dark)
+}
+
+
+.theme-box{
+    display: flex;
+    justify-content: end;
+}
+
+.toggle-btn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+#checkbox1{
+    visibility: hidden;
+}
+
+.toggle-label{
+    width: 3rem;
+    height: 2rem;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem ;
+
+}
+
+.toggle-ball{
+    width: 1.5rem;
+    height:1.5rem;
+    border-radius: 58%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
+    transition: all .2s linear;
+}
+
+#checkbox1:checked + .toggle-label .toggle-ball{
+    transform: translate(1rem);
+    background-color: green;
+}
+
+#icon1{
+    height: 20px;
+    width: 20px;
+    padding-top: 2px;
+    padding-right:5px;
+}
+#plogo{
+    margin-top: 0;
+    font-size: 23px;
+    color: var(--txt-light);
+    /* color: yellow; */
+    float: left;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    padding: 0px 0px 10px 10px;
+}
+
+.dark-mode #plogo{
+    color: var(--txt-dark);
+}
+
+.main_head{
+    color: var(--txt-light);
+    font-size: 40px;
+    margin-left: 45px;
+    font-family: 'Secular One', sans-serif;
+}
+.dark-mode .main_head{
+    color: var(--txt-dark);
+}
+
+
+.container1{
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.items{
+    background-color: var(--bg-primary);
+    justify-content: space-around;
+}
+
+.dark-mode .items{
+    background-color: var(--bg-primary);
+}
+
+#box1{
+    width: 23%;
+    margin: auto;
+    height: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+#box2{
+    color: var(--txt-light);
+    width: 73%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+.dark-mode #box2{
+    background-color: var(--bg-primary);
+    color: var(--txt-dark);
+}
+
+.title{
+    color: var(--txt-light);
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family:  sans-serif;
+    font-weight: bold;
+}
+
+
+.dark-mode .title{
+    color: var(--txt-dark);
+}
+
+.sub_number{
+    color: red;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 60px;
+    font-family: 'Secular One', sans-serif;
+    top:50%;
+}
+
+.chart1{
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    height: 240px;
+}
+
+#myBarChart{
+    height: 235px;
+    width: 100%;
+}
+
+
+.container2{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    height: 400px;
+    display: flex;
+}
+
+.card{
+    background-color: var(--bg-primary);
+    justify-content: space-around;
+}
+
+.dark-mode .card{
+    background-color: var(--bg-primary);
+}
+
+#box3{
+    color: var(--txt-light);
+    width: 48%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+#box4{
+    color: var(--txt-light);
+    width: 48%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+.chart2{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    height: 340px;
+}

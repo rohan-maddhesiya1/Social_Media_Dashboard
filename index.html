@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Kanit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    
+    <header>
+        <nav class="navbar">
+            <p id="plogo"><img src="/images/dashboard.png" id="icon1">Social Media Dashboard</p>
+            <ul>
+                
+
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="theme-box">
+        
+            <div class="toggle-btn">
+                <input type="checkbox" name="" id="checkbox1" >
+                <label for="checkbox1" class="toggle-label" >
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        
+    </div>
+
+    <div class="container1">
+       
+        <div class="items" id="yt_box">
+            <span><img src="icons\youtube.png" id="icons"></span>
+            <div class="title"> Youtube </div>
+            <div class="sub_num"> 53,409</div>
+            <div class="sub_title"> Subscriber</div>
+
+        </div>
+        <div class="items" id="fb_box">
+            <span><img src="icons\facebook.png" id="icons"></span>
+            <div class="title">Facebook</div>
+            <div class="sub_num"> 250,891</div>
+            <div class="sub_title"> Followers</div>
+        </div>
+        <div class="items" id="insta_box">
+            <span><img src="icons\instagram.png" id="icons"></span>
+            <div class="title">Instagram</div>
+            <div class="sub_num"> 5,640</div>
+            <div class="sub_title"> Followers</div>
+        </div>
+        <div class="items" id="twitter_box">
+            <span><img src="icons\x.png" id="icons"></span>
+            <div class="title">Twitter</div>
+            <div class="sub_num"> 2530</div>
+            <div class="sub_title"> Followers </div>
+        </div>
+
+        </div>
+
+        
+
+
+
+    <div class="container2">
+        <div class="chart1">
+            <div class="ch_top">
+                YouTube Stats
+            </div>
+            <div class="chartbox">
+            <canvas id="myLineChart"></canvas>
+            </div>
+        </div>
+
+        <div class="yt_box1">
+            <div class="heading1">
+                VIEWS
+            </div>
+            <div class="sub_head1">
+                Total Views &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>2,045,456+</b>
+            </div>
+
+            <div class="sub_head2">
+                <p>Daily  Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp; 200
+                </p>
+                <p>Weekly Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp; 6,098
+                </p>
+                <p>Monthly Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp; 36,098
+                </p>
+
+            </div>
+        </div>
+        <div class="yt_box2">
+            <div class="heading1">
+                LIKES
+            </div>
+            <div class="sub_head1">
+                Total Likes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>13,465+</b>
+            </div>
+
+            <div class="sub_head2">
+                <p>Daily  Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp; 200</p>
+                <p>Weekly Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp; 6,098</p>
+                <p>Monthly Avg. 
+                    &nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp; 36,098</p>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container4">
+        <div class="cards">
+            <div id="title1">
+                Facebook
+            </div>
+            
+            <div class="sub_head3">
+                <span>Last 24 hours</span>
+            </div>
+            <div class="content">
+
+                <div>
+                    <p> Views</p>
+                    <span> 204+</span>
+                </div>
+                <div>
+                    <p> Likes</p>
+                    <span> 80+</span>
+                </div>
+                <div>
+                    <p> Comments</p>
+                    <span> 50+</span>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="cards">
+            <div id="title2">
+                X
+            </div>
+            <div class="sub_head3">
+                <span>Last 24 hours</span>
+            </div>
+
+            <div class="content">
+
+                <div>
+                    <p> Retweets </p>
+                    <span> 50+</span>
+                </div>
+                <div>
+                    <p> Likes</p>
+                    <span> 69+</span>
+                </div>
+                <div>
+                    <p> Comments</p>
+                    <span> 53+</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="cards">
+            <div id="title3">
+                Instagram
+            </div>
+            <div class="sub_head3">
+                <span>Last 24 hours</span>
+            </div>
+            <div class="content">
+
+                <div>
+                    <p> Views</p>
+                    <span> 314+</span>
+                </div>
+                <div>
+                    <p> Likes</p>
+                    <span> 109+</span>
+                </div>
+                <div>
+                    <p> Comments</p>
+                    <span> 89+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="heading3">
+            Monthly Followers Gain
+        </div>
+        <div class="chart_box2">
+            <canvas id="myBarChart"></canvas>
+        </div>    
+    </div>
+
+    <div class="container5">
+        <div id="last_text"> Click!</div>
+        <div class="btn" id="yt_link"> <a href="youtube.html">Youtube</a></div>
+
+        <div class="btn" id="fb_link"><a href="facebook.html">Facebook</a></div>
+
+        <div class="btn" id="x_link"> <a href="Twitter.html">X</a></div>
+
+        <div class="btn" id="insta_link"> <a href="Instagram.html">Instagram</a></div>
+    
+    </div>
+
+<script src="jss/charts.js" ></script>
+<script src="jss/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/youtube.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    
+
+    <header>
+        <nav class="navbar">
+            <p id="plogo"><img src="/images/dashboard.png" id="icon1">Social Media Dashboard</p>
+            <ul>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="theme-box">
+        
+            <div class="toggle-btn">
+                <input type="checkbox" name="" id="checkbox1" >
+                <label for="checkbox1" class="toggle-label" >
+                    <span class="toggle-ball"></span>
+                </label>
+            </div> 
+
+    </div>
+  <div class="main_head">
+     YouTube
+  </div>
+    
+    <div class="container1">
+        <div class="itmes" id="box1">
+            <div class="title">
+                SUBSCRRIBER
+            </div>
+
+            <div class="sub_number">
+                56,564+
+            </div>
+        </div>
+        <div class="itmes" id="box2">
+            <div class="title">
+                Subscriber Gain
+            </div>
+            <div class="chart1">
+                <canvas id='myBarChart'></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="card" id="box3">
+            <div class="title">
+                Comments
+            </div>
+            <div class="chart2">
+                <canvas id="mylinechart1"></canvas>
+            </div>
+        </div>
+        <div class="card" id="box4">
+            <div class="title">
+                Likes / Dislikes
+            </div>
+            <div class="chart2">
+                <canvas id="piechart">
+                    
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="jss/youtubechart.js"></script>
+    <script src="jss/theme.js"></script>
+</body>
+</html>
